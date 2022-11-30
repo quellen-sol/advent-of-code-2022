@@ -1,0 +1,8 @@
+# TS Ignores
+ts/node_modules
+ts/dist
+
+# Rust ignores
+rust/compiled
+
+# Python ignores
