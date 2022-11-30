@@ -3,6 +3,7 @@
 
 cd rust
 set -e
+
 if (( $# != 1 )); then
     echo "Usage: $0 <day-number>"
     exit 1
