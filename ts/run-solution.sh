@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# Runs tsc and node on the given solution day
-# Usage: run-solution.sh <day-number>
 
 cd ts
+rm -rf dist/$1
 set -e
 
 if (( $# != 1 )); then

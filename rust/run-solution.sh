@@ -14,5 +14,5 @@ if [[ ! -d solutions/$1 ]]; then
     exit 1
 fi
 
-rustc solutions/$1.rs --out-dir compiled
-./compiled/$1
+rustc solutions/$1/main.rs --out-dir compiled/$1
+./compiled/$1/main

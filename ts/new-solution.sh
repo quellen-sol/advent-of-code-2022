@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-# Creates a new solution folder for the given day
 
 cd ts
 set -e

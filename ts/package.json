@@ -2,11 +2,13 @@
   "name": "ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "fix": "npx prettier --write src"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.10"
+  }
 }
