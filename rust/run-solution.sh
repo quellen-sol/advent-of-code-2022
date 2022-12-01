@@ -9,10 +9,10 @@ if (( $# != 1 )); then
     exit 1
 fi
 
-if [[ ! -d solutions/$1 ]]; then
+if [[ ! -d solutions/solution-$1 ]]; then
     echo "No solution found for day $1"
     exit 1
 fi
 
-rustc solutions/$1/main.rs --out-dir compiled/$1
-./compiled/$1/main
+cd solutions/solution-$1
+cargo run

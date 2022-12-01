@@ -3,6 +3,6 @@ ts/node_modules
 ts/dist
 
 # Rust ignores
-rust/compiled
+rust/solutions/**/target
 
 # Python ignores
