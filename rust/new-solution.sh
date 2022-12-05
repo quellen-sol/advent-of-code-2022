@@ -8,11 +8,6 @@ if (( $# != 1 )); then
     exit 1
 fi
 
-if [[ -d solutions/$1 ]]; then
-    echo "Solution already exists for day $1"
-    exit 1
-fi
-
 cargo init solutions/solution-$1
 
 read -p "Open in vscode? (y/n) " -n 1 -r
