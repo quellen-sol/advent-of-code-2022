@@ -17,10 +17,7 @@ const gameMap: GameMap = {
 const mapKeys = Object.keys(gameMap);
 
 const getNameFromCode = (code: string) => {
-  for (const [choice, codes] of Object.entries(gameMap) as [
-    Choice,
-    [string, string]
-  ][]) {
+  for (const [choice, codes] of Object.entries(gameMap) as [Choice, [string, string]][]) {
     if (codes.includes(code)) {
       return choice;
     }

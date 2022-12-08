@@ -11,7 +11,7 @@ const caloriesByElf = elves.map((elf) =>
       return acc + value;
     }
     return acc;
-  }, 0)
+  }, 0),
 );
 
 const highestCalories = Math.max(...caloriesByElf);

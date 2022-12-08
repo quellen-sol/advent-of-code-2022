@@ -16,7 +16,7 @@ const getMatchingCharsPart1 = (stringHalves: [string, string]) => {
     }
   }
   return contains;
-}
+};
 
 const getMatchingCharsPart2 = (stringPieces: [string, string, string]) => {
   const contains = new Set<string>();
@@ -33,7 +33,7 @@ const getMatchingCharsPart2 = (stringPieces: [string, string, string]) => {
 const part1 = () => {
   let totalPriority = 0;
   for (const line of input) {
-    const firstHalf = line.slice(0, line.length/2);
+    const firstHalf = line.slice(0, line.length / 2);
     const secondHalf = line.slice(Math.floor(line.length / 2), line.length);
     totalPriority += getMatchingCharsPart1([firstHalf, secondHalf]).reduce((acc, curr) => acc + getPriority(curr), 0);
   }
@@ -46,7 +46,10 @@ const part2 = () => {
     const firstSack = input[i];
     const secondSack = input[i + 1];
     const thirdSack = input[i + 2];
-    totalPriority += getMatchingCharsPart2([firstSack, secondSack, thirdSack]).reduce((acc, curr) => acc + getPriority(curr), 0);
+    totalPriority += getMatchingCharsPart2([firstSack, secondSack, thirdSack]).reduce(
+      (acc, curr) => acc + getPriority(curr),
+      0,
+    );
   }
   return totalPriority;
 };
